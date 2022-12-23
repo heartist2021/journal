@@ -1,0 +1,65 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1rem;
+    line-height: 1.25;
+    min-width: 330px;
+}
+
+
+
+h3{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 0.875rem;
+    /* 15px */
+    line-height: 1.082;
+    letter-spacing: 0.03em;
+    color: #0E0E0E;
+    margin: 0;
+}
+
+a{
+    font-size: 0.75rem;
+    color: #090909;
+    font-weight: 600;
+}
+
+h1{
+    font-size: 2rem;
+    line-height: 1.08;
+    font-weight: 700;
+    margin: 0;
+}
+
+.date-main{
+    font-size: 0.875rem;
+    line-height: 1.285;
+    font-weight: 400;
+}
+
+h2{
+    font-size: 1.5rem;
+    line-height: 1.082;
+    font-weight: 700;
+}
+
+h4{
+    font-size: 0.75rem;
+    font-weight: 700;
+    line-height: 1.082;
+}
+
+.copyright{
+    font-size: 0.75rem;
+    font-weight: 400;
+}
+
+img{
+    width: 100%;
+    object-fit: cover;
+}

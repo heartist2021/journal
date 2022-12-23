@@ -1,0 +1,469 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1rem;
+    line-height: 1.25;
+    min-width: 330px;
+}
+
+/*********
+ Typography
+**********/
+
+h3{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 0.875rem;
+    /* 15px */
+    line-height: 1.082;
+    letter-spacing: 0.03em;
+    color: #0E0E0E;
+    margin: 0;
+}
+
+a{
+    font-size: 0.75rem;
+    color: #090909;
+    font-weight: 600;
+}
+
+.date-header{
+    font-size: 0.75rem;
+    margin: 0;
+    font-weight: 400;
+    /* color: grey; */
+    color:rgb(227 219 219);
+}
+
+h1{
+    font-size: 2rem;
+    line-height: 1.08;
+    font-weight: 700;
+    margin: 0;
+}
+
+.date-main{
+    font-size: 0.875rem;
+    line-height: 1.285;
+    font-weight: 400;
+}
+
+h2{
+    font-size: 1.5rem;
+    line-height: 1.082;
+    font-weight: 700;
+}
+
+button{
+    box-sizing: border-box;
+    font-weight: 700;
+    font-size: 1rem;
+    line-height: inherit;
+    color: #000000;
+    padding: 0;
+}
+
+h4{
+    font-size: 0.75rem;
+    font-weight: 700;
+    line-height: 1.082;
+}
+
+.copyright{
+    font-size: 0.75rem;
+    font-weight: 400;
+}
+
+img{
+    width: 100%;
+    object-fit: cover;
+}
+
+/*********
+Layout
+**********/
+
+.container{
+    /* background-color: magenta; */
+    width: 90%;
+    margin: 0 auto;
+}
+
+nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #FFFFFF;
+    width: 100%;
+    /* min-height: 60px; */
+}
+
+nav{
+    box-shadow:0px 0px 1px rgb(185, 183, 183);
+}
+
+nav .container{
+    min-height: 60px;
+    display: flex;
+    align-items: center;
+    /* min-height: 7vh; */
+    padding: 0.25em 0;
+}
+.logo,.ham{
+    width: 24px;
+}
+.ham{
+    margin-left: auto;
+    cursor: pointer;
+}
+
+.nav-header{
+    margin-left: 0.1em;
+}
+
+.ul-links{
+    background-color: #FFFFFF;
+    position: fixed;
+    top:60px;
+    right: 0px;
+    /* margin-left: auto; */
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    text-transform: uppercase;
+    margin: 0;
+    justify-content: center;
+    gap: 5px;
+    box-shadow:0px 0px 1px rgb(185, 183, 183);
+    display: none;
+}
+
+.displayMenu{
+    display: block;
+}
+
+.ul-links li{
+    /* margin-left: 1.5em; */
+    padding: 0.5em 1em;
+    box-shadow:0px 0px 1px rgb(185, 183, 183);
+}
+
+.ul-links a{
+    text-decoration: none;
+}
+
+
+header{
+    background: #0000004F url(./images/article-image-hero.png);
+    background-size: cover;
+    background-position: top;
+    color: #FFFFFF;
+    /* min-width: 330px;
+    min-height: 330px; */
+    /* padding-bottom: 1.5em; */
+    /* padding-top: 8em; */
+    margin-top: 3.75em;
+}
+
+header .container{
+    /* min-width: 330px; */
+    min-height: 250px;
+    height: 70vw;
+    max-height: 488px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    cursor: pointer;
+    padding-bottom: 1.5em;
+
+    /* min-height: 35vh; */
+    /* margin-right: auto;
+    margin-left: 0; */
+    /* padding-left: 2em; */
+}
+
+header p{
+    margin: 0;
+    color:rgb(227 219 219);
+    max-width: 614px;
+
+}
+
+header .container > *{
+    margin-top: 0.5rem;
+}
+
+/****************** 
+Designing article page 
+*******************/
+.grid-container{
+    color: #151515;
+    margin-top: 5em;
+}
+
+.grid-color{
+    color: #151515;
+}
+
+.grid-h1{
+    margin: 0.5em 0;
+}
+
+.grid-img{
+
+    /* padding: 6em 0; */
+    /* min-height: 190px; */
+    height: 45vw;
+    max-height: 488px;
+    background: url(./images/article-image-hero.png);
+    background-size: cover;
+    background-position: top;
+    margin: 2.2em 0;
+    /* transform: matrix(-1, 0, 0, 1, 0, 0); */
+}
+
+.grid-recent{
+    font-family: 'Source Sans Pro', sans-serif;
+    text-align: center;
+    margin: 1.5em 0;
+    margin-top: 3em;
+}
+
+/****************** 
+Designing about me page 
+*******************/
+.grid-about-container{
+    margin-top: 5em;
+    display: grid;
+    grid-template-columns: 1fr;
+    /* gap: 1em; */
+}
+
+.grid-about-container > p{
+    margin-bottom: 0;
+}
+
+.grid-about-h1,
+.grid-about-container > h3{
+    /* margin: 1em 0; */
+    margin-top:1em;
+}
+.grid-about-img{
+    background: url(./images/profile_pic.png);
+    background-size: cover;
+    width: 182px;
+    height: 182px;
+}
+
+
+
+
+
+/* Card */
+/* main{
+    margin-top: 3em;
+} */
+
+.card:not(.card:first-child){
+    margin-top: 2.5em;
+}
+
+.card > *:not(img){
+    /* margin-top: 0.5rem; */
+    margin-bottom: 0;
+    text-decoration: none;
+}
+
+.card h2{
+    margin-top: 0.375em;
+}
+
+.card p{
+    margin-top: 0.5625em;
+}
+
+.card img{
+    border-radius: 3px;
+}
+
+.btn-view{
+   
+    border: none;
+    cursor: pointer;
+    background-color: #FFFFFF;
+    text-decoration-line: underline;
+    margin: 0 auto;
+    margin-top: 1.5em;
+    display: block;
+}
+
+footer{
+    margin-top: 2.5em;
+    background: #202020;
+    color: #FFFFFF;
+}
+
+footer .container{
+    text-align: center;
+    /* min-height: 15vh; */
+    padding: 2.25em 0;
+}
+
+.footer-header,.copyright{
+    margin: 0;
+    margin-top: 0.2em;
+}
+
+.footer-header{
+    letter-spacing: 0.03em;
+}
+
+main{
+    margin-top: 2.5em;
+}
+
+main .container{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+@media (min-width:768px) {
+
+/*********
+ Typography
+**********/
+    h3{
+        font-size: 1.25rem;
+    }
+
+    a{
+        font-size: 1rem;
+    }
+
+    .date-header{
+        font-size: 1rem;
+    }
+
+    h1{
+        font-size: 2.5rem;
+    }
+/*********
+ Layout
+**********/
+    
+    .card h2{
+        margin-top: 0.5833em;
+    }
+
+    main .container{
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 1.5em;
+    }
+    main{
+        margin-top: 0em;
+    }
+
+    .btn-view{
+        /* grid-column: 2; */
+        font-size: 0.875rem;
+        line-height: 1.285;
+        /* margin: 0 auto; */
+    }
+
+    header{
+        margin-top: 5.25em;
+    }
+    header .container{
+        padding-bottom: 3.75em;
+    }
+
+
+    nav .container{
+        padding: 1.55em 0;
+    }
+
+    .ul-links{
+        position: static;
+        /* top:60px;
+        right: 0px; */
+        margin-left: auto;
+        display: flex;
+        flex-direction: row;
+        box-shadow: none;
+    }
+    .ul-links li{
+        margin-left: 1.5em;
+        padding: 0;
+        box-shadow: none;
+    }
+    .ham{
+        display: none;
+    }
+
+
+    .logo{
+        width: 34px;
+    }
+
+    .card:first-child{
+        margin-top: 2.5em;
+    }
+    .grid-recent{
+        font-size: 1.5rem;
+        margin-bottom: 0;
+    }
+
+
+    .grid-container{
+        margin-top: 9em;
+        display: grid;
+        grid-template-columns: 4em 1fr 4em;
+    }
+
+    .grid-mid{
+        grid-column: 2;
+    }
+
+    .grid-full{
+        grid-column: 1/-1;
+    }
+
+/****************** 
+Designing about me page 
+*******************/
+
+    .grid-about-container{
+        margin-top: 9em;
+        /* display: grid; */
+        grid-template-columns: 4em 1fr 4fr 4em;
+        /* gap: 1em; */
+    }
+
+    .grid-about-img{
+        grid-column: 1/3;
+        grid-row:1/3;
+
+    }
+    .grid-about-h1{
+        margin-top: 0;
+        grid-row: 1;
+        grid-column: 3/-1;
+
+    }
+    .grid-about-body{
+        grid-row: 2;
+        grid-column: 3/-1;
+        margin-top: 0;
+    }
+
+    .grid-about-mid{
+        grid-column: 2/-2;
+    }
+    
+
+}
